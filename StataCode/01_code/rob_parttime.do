@@ -117,7 +117,7 @@ Generated Figures and Tables:
 	*/ ytitle(Density,size(large))/* 
 	*/ xtitle(Average annual labor earnings (euros), margin(medium) size(large))/*
 	*/ xlabel(0 25000 50000 75000,labsize(large))/*
-	*/ ylabel(0 2e-5 4e-5,nogrid labsize(large))/*
+	*/ ylabel(0 "0" 2e-5 "0.00002" 4e-5 "0.00004",nogrid labsize(large))/*
 	*/ title("")/*
 	*/ yscale(range(0 0.000045)) /*
 	*/ legend(order(1 "Obs" 2 "Predicted")) scheme(sj) graphregion(color(white))/*
@@ -129,7 +129,7 @@ Generated Figures and Tables:
 	*/ ytitle(Density,size(large))/* 
 	*/ xtitle(Average annual labor earnings (euros), margin(medium) size(large))/*
 	*/ xlabel(0 25000 50000 75000,labsize(large))/*
-	*/ ylabel(0 2e-5 4e-5,nogrid labsize(large))/*
+	*/ ylabel(0 "0" 2e-5 "0.00002" 4e-5 "0.00004",nogrid labsize(large))/*
 	*/ title("")/*
 	*/ yscale(range(0 0.000045)) /*
 	*/ legend(order(1 "Obs" 2 "Predicted")) scheme(sj) graphregion(color(white))/*
@@ -142,7 +142,7 @@ Generated Figures and Tables:
 	*/ xtitle(Average annual labor earnings (euros), margin(medium) size(large))/*
 	*/ xlabel(0 25000 50000 75000,labsize(large))/*
 	*/ yscale(range(0 0.000045)) /*
-	*/ ylabel(0 2e-5 4e-5,nogrid labsize(large))/*
+	*/ ylabel(0 "0" 2e-5 "0.00002" 4e-5 "0.00004",nogrid labsize(large))/*
 	*/ title("")/*
 	*/ legend(order(1 "Obs" 2 "Predicted")) scheme(sj) graphregion(color(white))/*
 	*/ legend(region(lcolor(white))) legend(size(large) cols(2))/*
@@ -155,7 +155,7 @@ Generated Figures and Tables:
 	*/ ytitle(Density,size(large))/* 
 	*/ xtitle(Average annual labor earnings (euros), margin(medium) size(large))/*
 	*/ xlabel(0 25000 50000 75000,labsize(large))/*
-	*/ ylabel(0 2e-5 4e-5,nogrid labsize(large))/*
+	*/ ylabel(0 "0" 2e-5 "0.00002" 4e-5 "0.00004",nogrid labsize(large))/*
 	*/ title("")/*
 	*/ yscale(range(0 0.000045)) /*
 	*/ legend(order(1 "Obs" 2 "Predicted")) scheme(sj) graphregion(color(white))/*
@@ -167,7 +167,7 @@ Generated Figures and Tables:
 	*/ ytitle(Density,size(large))/* 
 	*/ xtitle(Average annual labor earnings (euros), margin(medium) size(large))/*
 	*/ xlabel(0 25000 50000 75000,labsize(large))/*
-	*/ ylabel(0 2e-5 4e-5,nogrid labsize(large))/*
+	*/ ylabel(0 "0" 2e-5 "0.00002" 4e-5 "0.00004",nogrid labsize(large))/*
 	*/ title("")/*
 	*/ yscale(range(0 0.000045)) /*
 	*/ legend(order(1 "Obs" 2 "Predicted")) scheme(sj) graphregion(color(white))/*
@@ -180,7 +180,7 @@ Generated Figures and Tables:
 	*/ xtitle(Average annual labor earnings (euros), margin(medium) size(large))/*
 	*/ xlabel(0 25000 50000 75000,labsize(large))/*
 	*/ yscale(range(0 0.000045)) /*
-	*/ ylabel(0 2e-5 4e-5,nogrid labsize(large))/*
+	*/ ylabel(0 "0" 2e-5 "0.00002" 4e-5 "0.00004",nogrid labsize(large))/*
 	*/ title("")/*
 	*/ legend(order(1 "Obs" 2 "Predicted")) scheme(sj) graphregion(color(white))/*
 	*/ legend(region(lcolor(white))) legend(size(large) cols(2))/*

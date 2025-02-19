@@ -256,7 +256,7 @@ Generated Tables and Figures:
 
 /* ----- Figure 4a: Age-profile - Employment ----- */
 	twoway (connected mEmpl_o Age if Age<=65, sort lcolor(black) msymbol(i)) (connected mEmpl_s Age if Age<=65, sort lcolor(black) msymbol(i) lpattern(dash)), scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-	*/ ylabel(0 0.25 0.5 .75 1,labsize(medlarge)) /*
+	*/ ylabel(0 "0" 0.25 "0.25" 0.5 "0.5" .75 "0.75" 1 "1",labsize(medlarge)) /*
 	*/ yscale(range(0 1.0)) /*
 	*/ xtitle("Age (years)", margin(medium) size(medlarge))  ytitle("Employment rate", margin(medium) size(medlarge)) /*
 	*/ xlabel(20 30 40 50 60,labsize(medlarge))/*
@@ -280,7 +280,7 @@ Generated Tables and Figures:
 	
 /* ----- Figure SWA.2a: Age-profile - Unemployment ----- */
 	twoway (connected mUnempl_o Age if Age<=65, sort lcolor(black) msymbol(i)) (connected mUnempl_s Age if Age<=65, sort lcolor(black) msymbol(i) lpattern(dash)), scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-	*/ ylabel(0 0.25 0.5 .75 1,labsize(medlarge)) /*
+	*/ ylabel(0 "0" 0.25 "0.25" 0.5 "0.5" .75 "0.75" 1 "1",labsize(medlarge)) /*
 	*/ yscale(range(0 1.0)) /*
 	*/ xtitle("Age (years)", margin(medium) size(medlarge))  ytitle("Unemployment rate", margin(medium) size(medlarge)) /*
 	*/ xlabel(20 30 40 50 60,labsize(medlarge))/*
@@ -292,7 +292,7 @@ Generated Tables and Figures:
 
 /* ----- Figure SWA.2b: Age-profile - Retirement ----- */
 	twoway (connected mReti_o Age if Age<=65, sort lcolor(black) msymbol(i)) (connected mReti_s Age if Age<=65, sort lcolor(black) msymbol(i) lpattern(dash)), scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-	*/ ylabel(0 0.25 0.5 .75 1,labsize(medlarge)) /*
+	*/ ylabel(0 "0" 0.25 "0.25" 0.5 "0.5" .75 "0.75" 1 "1",labsize(medlarge)) /*
 	*/ yscale(range(0 1.0)) /*
 	*/ xtitle("Age (years)", margin(medium) size(medlarge))  ytitle("Retirement rate", margin(medium) size(medlarge)) /*
 	*/ xlabel(20 30 40 50 60,labsize(medlarge))/*
@@ -344,7 +344,7 @@ Generated Tables and Figures:
 	*/ ytitle(Density,size(large))/* 
 	*/ xtitle(Wage (euros per hour), margin(medium) size(large))/*
 	*/ xlabel(0 10 20 30 40 50,labsize(large))/*
-	*/ ylabel(0 0.03 0.06 0.09,nogrid labsize(large))/*
+	*/ ylabel(0 "0" 0.03 "0.03" 0.06 "0.06" 0.09 "0.09",nogrid labsize(large))/*
 	*/ title("")/*
 	*/ legend(order(1 "Obs" 2 "Predicted")) scheme(sj) graphregion(color(white))/*
 	*/ legend(region(lcolor(white))) legend(size(large) cols(2))/*
@@ -357,7 +357,7 @@ Generated Tables and Figures:
 	*/ ytitle(Density,size(large))/* 
 	*/ xtitle(Wage (euros per hour), margin(medium) size(large))/*
 	*/ xlabel(0 10 20 30 40 50, labsize(large))/*
-	*/ ylabel(0 0.03 0.06 0.09,  nogrid labsize(large))/*
+	*/ ylabel(0 "0" 0.03 "0.03" 0.06 "0.06" 0.09 "0.09",  nogrid labsize(large))/*
 	*/ title("")/*
 	*/ legend(order(1 "Obs" 2 "Predicted")) scheme(sj) graphregion(color(white))/*
 	*/ legend(region(lcolor(white))) legend(size(large) cols(2))/*
@@ -370,7 +370,7 @@ Generated Tables and Figures:
 	*/ ytitle(Density,size(large))/* 
 	*/ xtitle(Wage (euros per hour),margin(medium) size(large))/*
 	*/ xlabel(0 10 20 30 40 50, labsize(large))/*
-	*/ ylabel(0 0.03 0.06 0.09,nogrid labsize(large))/*
+	*/ ylabel(0 "0" 0.03 "0.03" 0.06 "0.06" 0.09 "0.09",nogrid labsize(large))/*
 	*/ title("")/*
 	*/ legend(order(1 "Obs" 2 "Predicted")) scheme(sj) graphregion(color(white))/*
 	*/ legend(region(lcolor(white))) legend(size(large) cols(2))/*
@@ -388,7 +388,7 @@ Generated Tables and Figures:
 	*/ ytitle(Density,size(large))/* 
 	*/ xtitle(Average annual labor earnings (euros), margin(medium) size(large))/*
 	*/ xlabel(0 25000 50000 75000,labsize(large))/*
-	*/ ylabel(0 2e-5 4e-5,nogrid labsize(large))/*
+	*/ ylabel(0 "0" 2e-5 "0.00002" 4e-5 "0.00004",nogrid labsize(large))/*
 	*/ title("")/*
 	*/ yscale(range(0 0.000045)) /*
 	*/ legend(order(1 "Obs" 2 "Predicted")) scheme(sj) graphregion(color(white))/*
@@ -402,7 +402,7 @@ Generated Tables and Figures:
 	*/ ytitle(Density,size(large))/* 
 	*/ xtitle(Average annual labor earnings (euros), margin(medium) size(large))/*
 	*/ xlabel(0 25000 50000 75000,labsize(large))/*
-	*/ ylabel(0 2e-5 4e-5,nogrid labsize(large))/*
+	*/ ylabel(0 "0" 2e-5 "0.00002" 4e-5 "0.00004",nogrid labsize(large))/*
 	*/ title("")/*
 	*/ yscale(range(0 0.000045)) /*
 	*/ legend(order(1 "Obs" 2 "Predicted")) scheme(sj) graphregion(color(white))/*
@@ -417,7 +417,7 @@ Generated Tables and Figures:
 	*/ xtitle(Average annual labor earnings (euros), margin(medium) size(large))/*
 	*/ xlabel(0 25000 50000 75000,labsize(large))/*
 	*/ yscale(range(0 0.000045)) /*
-	*/ ylabel(0 2e-5 4e-5,nogrid labsize(large))/*
+	*/ ylabel(0 "0" 2e-5 "0.00002" 4e-5 "0.00004",nogrid labsize(large))/*
 	*/ title("")/*
 	*/ legend(order(1 "Obs" 2 "Predicted")) scheme(sj) graphregion(color(white))/*
 	*/ legend(region(lcolor(white))) legend(size(large) cols(2))/*
@@ -763,7 +763,7 @@ Generated Tables and Figures:
 	twoway (line surv_func_obs1 x_var, connect(J) lcolor(black) msymbol(i)) /// 
 		   (line surv_func_sim1 x_var, connect(J) lcolor(black) msymbol(i) lpattern(dash)) ///
 			, scheme(s2mono) graphregion(color(white)) ///
-			ylabel(0 0.25 0.5 0.75 1, labsize(medlarge)) yscale(range(0,1)) ///
+			ylabel(0 "0" 0.25 "0.25" 0.5 "0.50" 0.75 "0.75" 1 "1", labsize(medlarge)) yscale(range(0,1)) ///
 			xtitle("Unemployment spell duration (years)", margin(medium) size(medlarge)) ///
 			ytitle("Survivor function", margin(medium) size(medlarge)) ///
 			legend(order(1 "Observed" 2 "Predicted")) ///
@@ -775,7 +775,7 @@ Generated Tables and Figures:
 	twoway (line surv_func_ed0_obs1 x_var, connect(J) lcolor(black) msymbol(i)) /// 
 		   (line surv_func_ed0_sim1 x_var, connect(J) lcolor(black) msymbol(i) lpattern(dash)) ///
 			, scheme(s2mono) graphregion(color(white)) ///
-			ylabel(0 0.25 0.5 0.75 1, labsize(medlarge)) yscale(range(0,1)) ///
+			ylabel(0 "0" 0.25 "0.25" 0.5 "0.50" 0.75 "0.75" 1 "1", labsize(medlarge)) yscale(range(0,1)) ///
 			xtitle("Unemployment spell duration (years)", margin(medium) size(medlarge)) ///
 			ytitle("Survivor function", margin(medium) size(medlarge)) ///
 			legend(order(1 "Observed" 2 "Predicted")) ///
@@ -787,7 +787,7 @@ Generated Tables and Figures:
 	twoway (line surv_func_ed1_obs1 x_var, connect(J) lcolor(black) msymbol(i)) /// 
 		   (line surv_func_ed1_sim1 x_var, connect(J) lcolor(black) msymbol(i) lpattern(dash)) ///
 			, scheme(s2mono) graphregion(color(white)) ///
-			ylabel(0 0.25 0.5 0.75 1, labsize(medlarge)) yscale(range(0,1)) ///
+			ylabel(0 "0" 0.25 "0.25" 0.5 "0.50" 0.75 "0.75" 1 "1", labsize(medlarge)) yscale(range(0,1)) ///
 			xtitle("Unemployment spell duration (years)", margin(medium) size(medlarge)) ///
 			ytitle("Survivor function", margin(medium) size(medlarge)) ///
 			legend(order(1 "Observed" 2 "Predicted")) ///

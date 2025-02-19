@@ -442,7 +442,7 @@ Generated Tables and Figures:
 			(line mEmpl_rich_E Age, lcolor(gs10) lpattern(dash_dot)), ///
 			scheme(s2mono) graphregion(color(white))	///
 			xtitle("Age (years)", margin(medium) size(medlarge)) ytitle("Employment rate", margin(medium) size(medlarge)) ///
-			yscale(range(0.5 1.0)) ylabel(0.5 .6 0.7 0.8 0.9 1,labsize(medlarge) nogrid) ///
+			yscale(range(0.5 1.0)) ylabel(0.5 "0.5" .6 "0.6" 0.7 "0.7" 0.8 "0.8" 0.9 "0.9" 1 "1",labsize(medlarge) nogrid) ///
 			xlabel(20 30 40 50 60,labsize(medlarge)) ///
 			legend(order(1 "Baseline - All" 2 "Reform - All" 3 "Baseline - weak employment history" 4 "Reform - weak employment history" 5 "Baseline - strong employment history"  6 "Reform - strong employment history"))	///
 			legend(region(lcolor(white))) legend(size(small) cols(2)) // 

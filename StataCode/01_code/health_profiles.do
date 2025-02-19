@@ -92,7 +92,7 @@ Generated Figures:
 
 * >>> Figure 3 - Panel (a): Probability of good health shock
 twoway (connected hbg_l age if age<=64, sort lcolor(black) msymbol(i)) (connected hbg_h age if age<=64, sort lcolor(black) msymbol(i) lpattern(dash)), scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-*/ ylabel(0 0.1 0.2,labsize(medium)) /*
+*/ ylabel(0 "0" 0.1 "0.1" 0.2 "0.2",labsize(medium)) /*
 */ xtitle("Age (years)", margin(medium) size(medium))  ytitle("Probability of good health shock", margin(medium) size(medium)) /*
 */ xlabel(20 30 40 50 60,labsize(medium))/*
 */ legend(order(1 "Low ed" 2 "High ed"))/*
@@ -103,7 +103,7 @@ graph export "${FIGURES}Figure_3a_HealthGood.pdf", as(pdf) replace
 
 * >>> Figure 3 - Panel (b): Probability of bad health shock
 twoway (connected hgb_l age if age<=64, sort lcolor(black) msymbol(i)) (connected hgb_h age if age<=64, sort lcolor(black) msymbol(i) lpattern(dash)), scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-*/ ylabel(0 0.1 0.2,labsize(medium)) /*
+*/ ylabel(0 "0" 0.1 "0.1" 0.2 "0.2",labsize(medium)) /*
 */ xtitle("Age (years)", margin(medium) size(medium))  ytitle("Probability of bad health shock", margin(medium) size(medium)) /*
 */ xlabel(20 30 40 50 60,labsize(medium))/*
 */ legend(order(1 "Low ed" 2 "High ed"))/*
@@ -114,7 +114,7 @@ graph export "${FIGURES}Figure_3b_HealthBad.pdf", as(pdf) replace
 
 * >>> Figure 3 Legend
 twoway (connected hgb_l age if age<=64, sort lcolor(black) msymbol(i)) (connected hgb_h age if age<=64, sort lcolor(black) msymbol(i) lpattern(dash)), scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-*/ ylabel(0 0.1 0.2,labsize(medium)) /*
+*/ ylabel(0 "0" 0.1 "0.1" 0.2 "0.2",labsize(medium)) /*
 */ xtitle("Age (years)", margin(medium) size(large))  ytitle("Probability of good health shock", margin(medium) size(large)) /*
 */ xlabel(20 40 60 78,labsize(medium))/*
 */ legend(order(1 "Low education" 2 "High education"))/*

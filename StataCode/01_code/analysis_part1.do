@@ -225,7 +225,7 @@ Generated Tables and Figures:
 		*/ (lpoly atr_LT WAGEInterest_LT if Age==20  & EDUC==14 & TYPE==2, sort bw(150000) lwidth(thick)  lcolor(black) msymbol(i))/*
 		*/ (lpoly atr_LT WAGEInterest_LT if Age==20  & EDUC==14 & TYPE==3, sort bw(150000) lwidth(thick)  lcolor(black) msymbol(i)),/* 
 		*/ scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-		*/ ylabel(0 .1 0.2 .3 0.4,labsize(large)) /*
+		*/ ylabel(0 "0" .1 "0.1" 0.2 "0.2" .3 "0.3" 0.4 "0.4",labsize(large)) /*
 		*/ legend(col(2) lab(1 "Low educ & high ability")  lab(2 "Low educ & medium ability") lab(3 "Low educ & low ability") lab(4 "High educ & high ability") lab(5 "High educ & medium ability") lab(6 "High educ & low ability"))/*
 		*/ xtitle("Lifetime earnings (euros)"" ", margin(medium) size(large))  ytitle("Share of lifetime earnings" "paid in tax", margin(medium) size(large )) /*
 		*/ xlabel(0 "0" 1000000 "1,000,000"  2000000 "2,000,000" 2900000 "3,000,000",labsize(large))/*
@@ -455,7 +455,7 @@ Generated Tables and Figures:
 				
 		twoway (lpoly  mEITAX_LT mEWAGE_LT, sort bw(150000) lcolor(black) lwidth(thick) msymbol(i)),/* 
 			*/ scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-			*/ ylabel(0 0.1 0.2 0.3 0.4,labsize(large)) /*
+			*/ ylabel(0 "0" 0.1 "0.1" 0.2 "0.2" 0.3 "0.3" 0.4 "0.4",labsize(large)) /*
 			*/ xtitle("Skill-group-level average lifetime earnings (euros)" "(Expected lifetime earnings (euros))", margin(medium) size(large))  ytitle("Share of lifetime earnings" "paid in tax", margin(medium) size(large)) /*
 			*/ xlabel(0 "0" 1000000 "1,000,000"  2000000 "2,000,000" 2900000 "3,000,000",labsize(large))/*
 			*/ xscale(range(0,3100000))/*
@@ -590,7 +590,7 @@ Generated Tables and Figures:
 		
 		twoway (lpoly mBadHealth mEWAGEInterest_LT, bw(150000)  sort lcolor(black) lwidth(thick) msymbol(i)),/* 
 		*/ scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-		*/ ylabel(0 0.05 0.1 0.15 0.2,labsize(large)) /*
+		*/ ylabel(0 "0" 0.05 "0.05" 0.1 "0.1" 0.15 "0.15" 0.2 "0.2",labsize(large)) /*
 		*/ xtitle("Skill-group-level average lifetime earnings (euros)" "(Expected lifetime earnings (euros))", margin(medium) size(large))  ytitle("Rate of disability benefit eligibility", margin(medium) size(large)) /*
 		*/ xlabel(0 "0" 1000000 "1,000,000"  2000000 "2,000,000" 2900000 "3,000,000",labsize(large))/*
 		*/ xscale(range(0,3100000))/*
@@ -607,7 +607,7 @@ Generated Tables and Figures:
 		
 		twoway (lpoly midb mEWAGEInterest_LT, bw(150000)  sort lcolor(black) lwidth(thick) msymbol(i)),/* 
 			*/ scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-			*/ ylabel(0 0.02 0.04 0.06 0.08,labsize(large)) /*
+			*/ ylabel(0 "0" 0.02 "0.02" 0.04 "0.04" 0.06 "0.06" 0.08 "0.08",labsize(large)) /*
 			*/ xtitle("Skill-group-level average lifetime earnings (euros)" "(Expected lifetime earnings (euros))", margin(medium) size(large))  ytitle("Rate of disability benefit receipt", margin(medium) size(large)) /*
 			*/ xlabel(0 "0" 1000000 "1,000,000"  2000000 "2,000,000" 2900000 "3,000,000",labsize(large))/*
 			*/ xscale(range(0,3100000))/*
@@ -718,7 +718,7 @@ Generated Tables and Figures:
 		*/ (lpoly we WAGEInterest_LT if WAGEInterest_LT<3000000 & EDUC==14 & TYPE==2 & ii==1, bw(400000)  sort lcolor(black) lwidth(thick) msymbol(i)) /* 
 		*/ (lpoly we WAGEInterest_LT if WAGEInterest_LT<3000000 & EDUC==14 & TYPE==3 & ii==1, bw(400000)  sort lcolor(black) lwidth(thick) msymbol(i)), /* 
 		*/ scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-		*/ ylabel(0 0.1 0.2 0.3,labsize(large)) /* ylabel(0 0.05 0.1,labsize(large))
+		*/ ylabel(0 "0" 0.1 "0.1" 0.2 "0.2" 0.3 "0.3",labsize(large)) /* ylabel(0 0.05 0.1,labsize(large))
 		*/ xtitle("Lifetime earnings (euros)", margin(medium) size(large))  ytitle("Fraction of income-eligible" "individuals who fail wealth test", margin(medium) size(large)) /*
 		*/ xlabel(0 "0" 1000000 "1,000,000"  2000000 "2,000,000" 2900000 "3,000,000",labsize(large))/*
 		*/ xscale(range(0,3100000))/*
@@ -766,7 +766,7 @@ Generated Tables and Figures:
 		
 		twoway (lpoly mwe_helper mEWAGEInterest_LT , bw(150000)  sort lcolor(black) lwidth(thick) msymbol(i)),/* if ii>0
 			*/ scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-			*/ ylabel(0 0.07 0.14,labsize(large)) /*
+			*/ ylabel(0 "0" 0.07 "0.07" 0.14 "0.14",labsize(large)) /*
 			*/ xtitle("Skill-group-level average lifetime earnings (euros)" "(Expected lifetime earnings (euros))", margin(medium) size(large))  ytitle("Fraction of income-eligible" "individuals who fail wealth test", margin(medium) size(large)) /*
 			*/ xlabel(0 "0" 1000000 "1,000,000"  2000000 "2,000,000" 2900000 "3,000,000",labsize(large))/*
 			*/ xscale(range(0,3100000))/*

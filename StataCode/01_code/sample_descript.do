@@ -90,7 +90,7 @@ Generated Tables and Figures:
 	
 	twoway (connected ATR wage, sort lcolor(black) msymbol(i)),/* 
 	*/ scheme(s2mono) ylab(, nogrid) graphregion(color(white))/*
-	*/ ylabel(0 0.1 0.2 0.3 0.4 0.5,labsize(large)) /*
+	*/ ylabel(0 "0" 0.1 "0.1" 0.2 "0.2" 0.3 "0.3" 0.4 "0.4" 0.5 "0.5",labsize(large)) /*
 	*/ xtitle("Annual earnings (euros)", margin(medium) size(large))  ytitle("Average annual tax rate", margin(medium) size(large)) /*
 	*/ xlabel(10000 "10,000" 30000 "30,000" 50000 "50,000"  70000 "70,000",labsize(large))/*
 	*/ xscale(range(0,75000))/*
